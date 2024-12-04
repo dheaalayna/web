@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #222;
+            color: #fff;
+            padding-top: 80px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 28px;
+            color: #f7e7ce;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #f7e7ce;
+        }
+
+        h1 {
+            color: #ffefd5;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .education {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .education-item {
+            background: #5c4a3b;
+            border-radius: 10px;
+            padding: 20px;
+            width: 22%;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out, background 0.3s ease;
+        }
+
+        .education-item:hover {
+            transform: translateY(-10px);
+            background: #4b3b2f;
+        }
+
+        .education-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .container2 {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #5c4a3b;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .container2 h1 {
+            color: #f7e7ce;
+            margin-bottom: 20px;
+        }
+
+        .btn-box a {
+            background-color: #fff;
+            color: #333;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-box a:hover {
+            background-color: #dcdcdc;
+        }
+
+        @media (max-width: 768px) {
+            .education-item {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .education-item {
+                width: 100%;
+            }
+
+            .navbar a {
+                margin-left: 15px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">DAS Profile</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="interest.html">Interest</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>My Education</h1>
+        <div class="education">
+            <div class="education-item">
+                <img src="1.jpeg" alt="SK St. Luke">
+                <h2>SK St. Luke</h2>
+                <p>Primary School</p>
+            </div>
+            <div class="education-item">
+                <img src="2.jpeg" alt="SMK Sri Aman">
+                <h2>SMK Sri Aman</h2>
+                <p>Secondary School</p>
+            </div>
+            <div class="education-item">
+                <img src="3.jpeg" alt="SMK St. Mary">
+                <h2>SMK St. Mary</h2>
+                <p>Secondary School</p>
+            </div>
+            <div class="education-item">
+                <img src="4.jpeg" alt="UiTM">
+                <h2>University Teknologi Mara</h2>
+                <p>Diploma in Information Management</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h1>My Portfolio & CV</h1>
+        <p>Download my CV or explore my work below:</p>
+        <div class="btn-box">
+            <a href="cv.pdf" download>Download My CV</a>
+        </div>
+    </div>
+</body>
+</html>

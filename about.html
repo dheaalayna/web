@@ -1,0 +1,276 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #333;
+            color: #fff;
+            padding-top: 80px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #f7e7ce;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #f7e7ce;
+        }
+
+        .home-sci {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .home-sci a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .home-sci a:hover {
+            color: #f7e7ce;
+            transform: scale(1.1);
+        }
+
+        .container, .container2 {
+            max-width: 900px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #f7e7ce;
+            text-transform: uppercase;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.8;
+            margin: 10px 0 30px;
+            font-size: 1.1em;
+            color: #fff8e7;
+        }
+
+        .biodata, .extra-info {
+            background: #836953;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            margin-bottom: 40px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .biodata strong, .extra-info strong {
+            color: #f7e7ce;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .biodata {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .bio-image img {
+            width: 220px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .bio-text {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .biodata {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-section img {
+                height: auto;
+            }
+        }
+
+        .quote {
+            font-size: 1.1em;
+            font-style: italic;
+            color: #d1c3b0;
+            margin-top: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            font-size: 30px;
+            color: white;
+            opacity: 0.8;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #f7e7ce;
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">DAS Profile.</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html" class="active">About Me</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="interest.html" class="active">Interest</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="biodata">
+            <div class="bio-image">
+                <img src="me.jpeg" alt="Dhea Alayna Sofea" />
+            </div>
+            <div class="bio-text">
+                <h2>Personal Background</h2>
+                <p><strong>Full Name:</strong> Dhea Alayna Sofea</p>
+                <p><strong>Date of Birth:</strong> May 16, 2004</p>
+                <p><strong>Age:</strong> 20 years old</p>
+                <p><strong>Birthplace:</strong> Hospital Nyabau Bintulu</p>
+                <p><strong>MBTI:</strong> INFP</p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="biodata">
+                <div class="bio-image">
+                    <img src="f.jpeg" alt="Family" />
+                </div>
+                <div class="bio-text">
+                    <h2>Parents</h2>
+                    <p><strong>Father:</strong> Azlan Hasmy bin Muzakir</p>
+                    <p><strong>Date of Birth:</strong> 11, February 1976</p>
+                    <p><strong>Mother:</strong> Nur Airis Arissa binti Tommy</p>
+                    <p><strong>Date of Birth:</strong> 9, May 1982</p>
+                    <p><strong>Siblings:</strong> 8</p>
+                </div>
+            </div>
+
+            <h1>More About Me</h1>
+
+            <div class="extra-info">
+                <h2>Career Goals</h2>
+                <h3><strong>1. Cabin Crew Member</strong></h3>
+                <p>I aspire to work as a cabin crew member as it combines my love for aviation, customer service, and adventure.</p>
+                <h3><strong>2. UNESCO or NGO Volunteer</strong></h3>
+                <p>I am passionate about contributing to meaningful causes and helping communities.</p>
+                <h3><strong>3. Writer</strong></h3>
+                <p>It allows me to creatively express my thoughts, share stories, and connect with others through words.</p>
+                <h3><strong>4. Event Coordinator/Manager</strong></h3>
+                <p>I enjoy creating memorable experiences, solving logistical challenges, and ensuring everything runs smoothly.</p>
+            </div>
+
+            <div class="extra-info">
+                <h2>Life Goals</h2>
+                <p>1. Travel to 50 countries</p>
+                <p>2. Skydive or Bungee Jump</p>
+                <p>3. Write a Book</p>
+                <p>4. Start a Charity or Volunteer Program</p>
+                <p>5. Experience the Northern Lights</p>
+            </div>
+
+            <h2>Life Philosophy</h2>
+            <div class="image-section">
+                <img src="f2.jpeg" alt="A personal highlight image">
+            </div>
+            <p class="quote">"True happiness comes from letting go of the need to prove ourselves and simply embracing the messy, imperfect moments of life."</p>
+        </div>
+    </div>
+
+    <div class="home-sci">
+        <div class="social-links">
+            <a href="https://www.instagram.com/dhealaynaa" target="_blank" title="Instagram">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://www.tiktok.com/@l4ynaasofie" target="_blank" title="TikTok">
+                <i class='bx bxl-tiktok'></i>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

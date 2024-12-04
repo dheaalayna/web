@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #333;
+            color: #fff;
+            padding-top: 80px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: #f7e7ce;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #f7e7ce;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2 {
+            color: #ffefd5;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .interest {
+            background: #5c4a3b;
+            border-radius: 12px;
+            padding: 20px;
+            width: 22%;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .interest:hover {
+            transform: translateY(-15px);
+            background: #383428;
+        }
+
+        .interest img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .interest h2 {
+            color: #ffefd5;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .interest p {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .music-icon {
+            font-size: 30px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            font-size: 30px;
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffefd5;
+        }
+
+        @media (max-width: 768px) {
+            .interest {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .interest {
+                width: 100%;
+            }
+
+            .navbar a {
+                margin-left: 15px;
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">DAS Profile.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="interest.html">Interest</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Favourite Books</h1>
+        <h2>Diving into stories and knowledge through books.</h2>
+        <div class="interests">
+            <div class="interest">
+                <img src="book1.jpg" alt="Tales of Celestial Kingdom">
+                <h2>Tales of Celestial Kingdom by Sue Lynn Tan</h2>
+                <p>A thrilling journey through mythical kingdoms, with rich characters and a plot filled with twists and turns.</p>
+            </div>
+            <div class="interest">
+                <img src="book2.jpeg" alt="Midnight Monologue">
+                <h2>Midnight Monologue by Charissa Ong Ty</h2>
+                <p>A heartfelt exploration of self-discovery and the challenges of life, beautifully woven with poetic language.</p>
+            </div>
+            <div class="interest">
+                <img src="book3.jpeg" alt="Tulisan by Daiyan Trisha">
+                <h2>Tulisan by Daiyan Trisha</h2>
+                <p>A beautiful collection of songs and poetry that speak to the soul, drawing on love and life's complexities.</p>
+            </div>
+            <div class="interest">
+                <img src="book4.jpeg" alt="Memasang Sayap">
+                <h2>Memasang Sayap yang Patah by Jiwa</h2>
+                <p>A story of resilience, showcasing the journey of healing and overcoming adversity with grace.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Favourite Movies</h1>
+        <h2>Escape reality, one episode at a time.</h2>
+        <div class="interests">
+            <div class="interest">
+                <img src="m1.jpeg" alt="Love Game in Eastern Fantasy">
+                <h2>Love Game in Eastern Fantasy</h2>
+                <p>A historical romance set in an Eastern kingdom, filled with magical elements and captivating characters.</p>
+            </div>
+            <div class="interest">
+                <img src="m2.jpeg" alt="When the Phone Rings">
+                <h2>When the Phone Rings</h2>
+                <p>A suspenseful thriller about a mysterious phone call that changes everything, leading to unexpected outcomes.</p>
+            </div>
+            <div class="interest">
+                <img src="m3.jpeg" alt="Zombieverse New Blood">
+                <h2>Zombieverse New Blood</h2>
+                <p>An action-packed horror series set in a post-apocalyptic world, featuring gripping survival stories.</p>
+            </div>
+            <div class="interest">
+                <img src="m4.jpeg" alt="Bridgerton">
+                <h2>Bridgerton</h2>
+                <p>A period drama that explores love, gossip, and high society in Regency-era London, with stunning visuals and complex relationships.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Favourite Music</h1>
+        <h2>Enjoying melodies and discovering new genres.</h2>
+        <div class="interests">
+            <div class="interest">
+                <img src="cas.jpeg" alt="Silver Sable by Cigarettes After Sex">
+                <h2>Silver Sable by Cigarettes After Sex</h2>
+                <p>A dreamy, ambient track with a hauntingly beautiful melody, perfect for late-night reflections.</p>
+                <i class="bx bx-play-circle music-icon" onclick="playMusic('cas')"></i>
+                <audio id="cas" style="display:none;">
+                    <source src="cas.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="interest">
+                <img src="w2e.jpeg" alt="Slow Dive by Wave to Earth">
+                <h2>Slow Dive by Wave to Earth</h2>
+                <p>A mellow track with a soothing vibe, blending ambient sounds with deep emotional undertones.</p>
+                <i class="bx bx-play-circle music-icon" onclick="playMusic('wte1')"></i>
+                <audio id="wte1" style="display:none;">
+                    <source src="wte1.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="interest">
+                <img src="w2e2.jpeg" alt="Love. by Wave to Earth">
+                <h2>Love. by Wave to Earth</h2>
+                <p>A melodic and intimate track that explores the many facets of love, perfect for quiet moments of reflection.</p>
+                <i class="bx bx-play-circle music-icon" onclick="playMusic('wte2')"></i>
+                <audio id="wte2" style="display:none;">
+                    <source src="wte2.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="interest">
+                <img src="n.jpeg" alt="Nightjar by Cemeteries">
+                <h2>Nightjar by Cemeteries</h2>
+                <p>A dark, atmospheric track that takes you on a journey through haunting melodies and profound lyrics.</p>
+                <i class="bx bx-play-circle music-icon" onclick="playMusic('Nightjar')"></i>
+                <audio id="Nightjar" style="display:none;">
+                    <source src="Nightjar.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-sci">
+        <div class="social-links">
+            <a href="https://www.instagram.com/dhealaynaa?igsh=MWpuNHpobXpnYzhhbA==" target="_blank" title="Instagram">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://www.tiktok.com/@l4ynaasofie?_t=8rkUJDMAj4b&_r=1" target="_blank" title="TikTok">
+                <i class='bx bxl-tiktok'></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function playMusic(id) {
+            var music = document.getElementById(id);
+            var icon = document.querySelector(`[onclick="playMusic('${id}')"]`);
+            if (music.paused) {
+                music.play();
+                icon.classList.remove('bx-play-circle');
+                icon.classList.add('bx-pause-circle');
+            } else {
+                music.pause();
+                icon.classList.remove('bx-pause-circle');
+                icon.classList.add('bx-play-circle');
+            }
+        }
+    </script>
+</body>
+</html>
